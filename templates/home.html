@@ -1,0 +1,36 @@
+<body>
+    <h1>🍲 Welcome to the Recipe App</h1>
+
+    {% if user.is_authenticated %}
+        <p>👋 Hello, {{ user.username }} | <a href="{% url 'logout' %}">Logout</a></p>
+    {% else %}
+        <p><a href="{% url 'login' %}">Login</a></p>
+    {% endif %}
+
+    <p><a href="{% url 'add_recipe' %}">➕ Add New Recipe</a></p>
+
+    {% if recipes %}
+        <ul>
+            {% for recipe in recipes %}
+                <li>
+                    <h3>{{ recipe.title }}</h3>
+                    <p><strong>Category:</strong> {{ recipe.category }}</p>
+                    <p><strong>By:</strong> {{ recipe.user.username }}</p>
+                    <p><strong>Ingredients:</strong> {{ recipe.ingredients }}</p>
+                    <p><strong>Instructions:</strong> {{ recipe.instructions }}</p>
+
+                    {% if user == recipe.user %}
+                        <p>
+                            <a href="{% url 'edit_recipe' recipe.id %}">✏️ Edit</a> |
+                            <a href="{% url 'delete_recipe' recipe.id %}">🗑️ Delete</a>
+                        </p>
+                    {% endif %}
+
+                    <hr>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No recipes found.</p>
+    {% endif %}
+</body>
