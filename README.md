@@ -122,16 +122,6 @@ Visit: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ---
 
-## 📦 Static Files
-
-If you use static files:
-
-```bash
-python manage.py collectstatic
-```
-
----
-
 ## ✅ Status
 
 ✔️ Fully working CRUD Recipe App
@@ -139,14 +129,3 @@ python manage.py collectstatic
 ✔️ Authenticated views for edit/delete
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-```
-
----
-
-Let me know if you want this zipped or converted into a downloadable `.md` file.
-```
