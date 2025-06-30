@@ -1,5 +1,5 @@
 # Recipe_App
-🍲 Recipe App
+#🍲 Recipe App
 
 A simple recipe management app built using Django with REST API support, PostgreSQL database, and Django templates for frontend. Users can add, edit, delete, and view recipes with login authentication.
 
