@@ -1,5 +1,8 @@
 # Recipe_App
-##🍲 Recipe App
+---
+
+```markdown
+# 🍲 Recipe App
 
 A simple recipe management app built using Django with REST API support, PostgreSQL database, and Django templates for frontend. Users can add, edit, delete, and view recipes with login authentication.
 
@@ -122,9 +125,31 @@ Visit: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ---
 
+## 📦 Static Files
+
+If you use static files:
+
+```bash
+python manage.py collectstatic
+```
+
+---
+
 ## ✅ Status
 
 ✔️ Fully working CRUD Recipe App
 ✔️ Supports both HTML templates and REST API
 ✔️ Authenticated views for edit/delete
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+```
+
+---
+
+Let me know if you want this zipped or converted into a downloadable `.md` file.
 ```
